@@ -1,0 +1,11 @@
+# Ignore plugin files (if using lazy.nvim/packer)
+/lazy-lock.json
+/plugin/packer_compiled.lua
+
+# Ignore swap/temp files
+*.swp
+*.tmp
+*.bak
+
+# Ignore local overrides (if any)
+local.lua
