@@ -53,3 +53,22 @@ set.incsearch = true
 
 -- faster cursor hold
 set.updatetime = 50
+
+vim.scriptencoding = "utf-8"
+vim.opt.encoding = "utf-8"
+vim.opt.fileencoding = "utf-8"
+vim.opt.smartindent = true
+
+
+vim.g.clipboard = {
+    name = 'myClipboard',
+    copy = {
+        ['+'] = { 'xclip', '-selection', 'clipboard' },
+        ['*'] = { 'xclip', '-selection', 'primary' },
+    },
+    paste = {
+        ['+'] = { 'xclip', '-selection', 'clipboard', '-o' },
+        ['*'] = { 'xclip', '-selection', 'primary', '-o' },
+    },
+    cache_enabled = true,
+}
