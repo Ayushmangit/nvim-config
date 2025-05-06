@@ -20,3 +20,8 @@ require("lazy").setup({
     { import = "plugins.autotag" },
     change_detection = { notify = false },
 })
+
+require("gruvbox").setup({
+    transparent_mode = true,
+})
+vim.cmd.colorscheme "gruvbox"
