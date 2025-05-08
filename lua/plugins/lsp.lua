@@ -16,7 +16,7 @@ return {
     },
     config = function()
         local autoformat_filetypes = {
-            "lua",
+            "lua", "javaScript"
         }
         -- Create a keymap for vim.lsp.buf.implementation
         vim.api.nvim_create_autocmd('LspAttach', {
@@ -101,7 +101,6 @@ return {
         require('mason-lspconfig').setup({
             ensure_installed = {
                 "lua_ls",
-                "intelephense",
                 "ts_ls",
                 "eslint",
                 "jdtls",
